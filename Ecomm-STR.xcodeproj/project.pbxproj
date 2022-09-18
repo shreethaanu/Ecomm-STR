@@ -17,6 +17,7 @@
 		E2B2C22C28D4A867009EC4E7 /* Ecomm_STRUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C22B28D4A867009EC4E7 /* Ecomm_STRUITests.swift */; };
 		E2B2C22E28D4A867009EC4E7 /* Ecomm_STRUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C22D28D4A867009EC4E7 /* Ecomm_STRUITestsLaunchTests.swift */; };
 		E2B2C23C28D4A9F4009EC4E7 /* topbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C23B28D4A9F4009EC4E7 /* topbar.swift */; };
+		E2B2C23E28D71122009EC4E7 /* bannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C23D28D71122009EC4E7 /* bannerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		E2B2C22B28D4A867009EC4E7 /* Ecomm_STRUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecomm_STRUITests.swift; sourceTree = "<group>"; };
 		E2B2C22D28D4A867009EC4E7 /* Ecomm_STRUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecomm_STRUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		E2B2C23B28D4A9F4009EC4E7 /* topbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topbar.swift; sourceTree = "<group>"; };
+		E2B2C23D28D71122009EC4E7 /* bannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				E2B2C23B28D4A9F4009EC4E7 /* topbar.swift */,
+				E2B2C23D28D71122009EC4E7 /* bannerView.swift */,
 			);
 			path = SharedViews;
 			sourceTree = "<group>";
@@ -274,6 +277,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2B2C23E28D71122009EC4E7 /* bannerView.swift in Sources */,
 				E2B2C23C28D4A9F4009EC4E7 /* topbar.swift in Sources */,
 				E2B2C21528D4A867009EC4E7 /* Persistence.swift in Sources */,
 				E2B2C20E28D4A866009EC4E7 /* ContentView.swift in Sources */,
