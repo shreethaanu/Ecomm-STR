@@ -12,7 +12,6 @@ struct DetailScreen: View {
     var colourArray: [Color] = [.gray, .red, .blue, .black, .purple]
     @State var myItems: homeDataModel
     var body: some View {
-        NavigationView {
             VStack {
                 //            HStack {
                 //                    Button(action: {
@@ -115,16 +114,15 @@ struct DetailScreen: View {
                     }
                 }
                 HStack{
-                    NavigationLink(destination: cartScreen()) {
+
                     Text("€ 39.99")
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
                         .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                         .padding()
                     Spacer(minLength: 25)
-                   
-                        Button("Add to Cart"){
-                        }
+                    NavigationLink(destination: cartScreen()) {
+                        Text("Add to Cart")
                             .frame(width: 150.0, height: 60.0)
                             .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 0.064, saturation: 0.731, brightness: 0.85)/*@END_MENU_TOKEN@*/)
                             .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
@@ -136,7 +134,6 @@ struct DetailScreen: View {
             }
         }
     }
-}
 struct DetailScreen_Previews: PreviewProvider {
     static var previews: some View {
         DetailScreen(myItems: homeDataModel())
