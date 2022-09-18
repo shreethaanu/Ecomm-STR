@@ -19,6 +19,7 @@
 		E2B2C23C28D4A9F4009EC4E7 /* topbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C23B28D4A9F4009EC4E7 /* topbar.swift */; };
 		E2B2C23E28D71122009EC4E7 /* bannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C23D28D71122009EC4E7 /* bannerView.swift */; };
 		E2B2C24128D71981009EC4E7 /* DetailScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C24028D71981009EC4E7 /* DetailScreen.swift */; };
+		E2B2C24428D72AEF009EC4E7 /* homeDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C24328D72AEF009EC4E7 /* homeDataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +55,7 @@
 		E2B2C23B28D4A9F4009EC4E7 /* topbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topbar.swift; sourceTree = "<group>"; };
 		E2B2C23D28D71122009EC4E7 /* bannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bannerView.swift; sourceTree = "<group>"; };
 		E2B2C24028D71981009EC4E7 /* DetailScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailScreen.swift; sourceTree = "<group>"; };
+		E2B2C24328D72AEF009EC4E7 /* homeDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = homeDataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,10 +106,10 @@
 		E2B2C20A28D4A866009EC4E7 /* Ecomm-STR */ = {
 			isa = PBXGroup;
 			children = (
+				E2B2C24228D72ACF009EC4E7 /* Home */,
 				E2B2C23F28D71969009EC4E7 /* DetailScreen */,
 				E2B2C23A28D4A9DD009EC4E7 /* SharedViews */,
 				E2B2C20B28D4A866009EC4E7 /* Ecomm_STRApp.swift */,
-				E2B2C20D28D4A866009EC4E7 /* ContentView.swift */,
 				E2B2C20F28D4A867009EC4E7 /* Assets.xcassets */,
 				E2B2C21428D4A867009EC4E7 /* Persistence.swift */,
 				E2B2C21628D4A867009EC4E7 /* Ecomm_STR.xcdatamodeld */,
@@ -156,6 +158,15 @@
 				E2B2C24028D71981009EC4E7 /* DetailScreen.swift */,
 			);
 			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		E2B2C24228D72ACF009EC4E7 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				E2B2C20D28D4A866009EC4E7 /* ContentView.swift */,
+				E2B2C24328D72AEF009EC4E7 /* homeDataModel.swift */,
+			);
+			path = Home;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,6 +301,7 @@
 			files = (
 				E2B2C23E28D71122009EC4E7 /* bannerView.swift in Sources */,
 				E2B2C23C28D4A9F4009EC4E7 /* topbar.swift in Sources */,
+				E2B2C24428D72AEF009EC4E7 /* homeDataModel.swift in Sources */,
 				E2B2C21528D4A867009EC4E7 /* Persistence.swift in Sources */,
 				E2B2C20E28D4A866009EC4E7 /* ContentView.swift in Sources */,
 				E2B2C20C28D4A866009EC4E7 /* Ecomm_STRApp.swift in Sources */,

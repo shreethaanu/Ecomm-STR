@@ -10,23 +10,49 @@ import SwiftUI
 struct DetailScreen: View {
     var sizeArray = ["S", "M", "L", "XL"]
     var colourArray: [Color] = [.gray, .red, .blue, .black, .purple]
+    @State var myItems: homeDataModel
     var body: some View {
         VStack {
+//            HStack {
+//                    Button(action: {
+//                        print("button pressed")
+//
+//                    }) {
+//                        Image(systemName: "chevron.backward")
+//                            .frame(width: 25.0, height: 25.0)
+//                            .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
+//                    }
+//                    .padding(.leading, 25.0)
+//                    Spacer()
+//                    Button(action: {
+//                        print("button pressed")
+//                    }) {
+//                        Image(systemName: "heart")
+//                            .tint(.red)
+//                            .frame(width: 30.0, height: 30.0)
+//                    }
+//                    .padding(.trailing, 25.0)
+//                }
         ScrollView(.vertical, showsIndicators: false) {
             VStack{
-                Text("Slim Fit Casual Shirt")
+                Text(myItems.name ?? "")
                     .font(.title)
                     .fontWeight(.medium)
                     .multilineTextAlignment(.center)
                     .lineLimit(1)
-                    .padding([.top, .leading, .trailing], 60.0)
+                    .padding([.top, .leading, .trailing], 10.0)
                 
-                Text("€ 39.99")
+                Group {
+                    Text("€")
+                        .fontWeight(.bold)
+                        .foregroundColor(Color.orange) +
+                    Text("   39.99")
+                }
+                .padding(.top, 1.0)
                     .font(.title2)
                     .fontWeight(.regular)
                     .multilineTextAlignment(.center)
                     .lineLimit(1)
-                    .padding(.top, 1.0)
                 
                 ScrollView(.horizontal, showsIndicators: false) {
                     HStack(spacing: 16) {
@@ -44,7 +70,7 @@ struct DetailScreen: View {
                     Text("Select Size")
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                         .padding(.leading)
                     Spacer()
                 }
@@ -52,13 +78,11 @@ struct DetailScreen: View {
                 HStack(spacing: 20) {
                     ForEach(0..<sizeArray.count) { i in
                         Button(sizeArray[i]) {
-                            // self.didTap = true
                         }
                         .font(.body)
                         .frame(width: 40, height: 40)
                         .border(.gray)
                         .cornerRadius(5)
-                        //.background(didTap ? Color.blue : Color.yellow)
                     }
                     Spacer ()
                 }
@@ -67,7 +91,7 @@ struct DetailScreen: View {
                     Text("Select Colour")
                         .fontWeight(.bold)
                         .multilineTextAlignment(.leading)
-                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                        .font(/*@START_MENU_TOKEN@*/.title2/*@END_MENU_TOKEN@*/)
                         .padding(.leading)
                     Spacer()
                 }
@@ -100,18 +124,19 @@ struct DetailScreen: View {
                 Button("Add to Cart"){
                 }
                 .frame(width: 150.0, height: 60.0)
-                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.black/*@END_MENU_TOKEN@*/)
+                .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 0.064, saturation: 0.731, brightness: 0.85)/*@END_MENU_TOKEN@*/)
                 .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
                 // Spacer()
             }
             .padding([.trailing], 10.0)
-            Spacer ()
+            Spacer(minLength: 5)
         }
     }
     }
 
 struct DetailScreen_Previews: PreviewProvider {
     static var previews: some View {
-        DetailScreen()
+        DetailScreen(myItems: homeDataModel())
     }
 }
