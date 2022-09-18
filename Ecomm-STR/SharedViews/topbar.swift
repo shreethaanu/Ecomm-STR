@@ -9,7 +9,6 @@ import SwiftUI
 
 struct topbar: View {
     var body: some View {
-        VStack {
             HStack {
                 Button(action: {
                     print("button pressed")
@@ -24,8 +23,8 @@ struct topbar: View {
                 Spacer()
                 
                 Text("STR ECOMM")
-                    .font(.headline)
-                    .fontWeight(.heavy)
+                    .font(.title)
+                    .fontWeight(.ultraLight)
                 Spacer()
                 Button(action: {
                     print("button pressed")
@@ -37,9 +36,8 @@ struct topbar: View {
                 }
                 .padding(.trailing, 25.0)
             }
-            .frame(maxWidth: .infinity, maxHeight: 150)
+            .frame(maxWidth: .infinity, maxHeight: 90)
             .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color(hue: 1.0, saturation: 0.0, brightness: 0.904)/*@END_MENU_TOKEN@*/)
-        }
     }
 }
 
