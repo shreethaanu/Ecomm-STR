@@ -18,33 +18,11 @@ struct orderSuccess: View {
                 .font(.title2)
                 .fontWeight(.medium)
                 .padding(.vertical)
-          //  self.zoomed.toggle()
-//            GeometryReader() { geometry in
-//                Image("orderSuccess").resizable()
-//                    .frame(width: 200, height: 200)
-//                    .clipShape(RoundedRectangle(cornerRadius: self.zoomed ? 40 : 400 ))
-//                    .overlay( Circle()
-//                        .fill(self.zoomed ? Color.clear : Color(red: 1.0, green: 1.0, blue: 1.0, opacity: 0.4))
-//                        .saturation(self.zoomed ? 1 : 0)
-//                        .scaleEffect(0.8) )
-//                    .position(x: self.zoomed ? geometry.frame(in: .local).midX : 640, y: 150)
-//                    .scaleEffect(self.zoomed ? 1.73 : 0.33)
-//                    .shadow(radius: 10)
-//                    .animation(.spring())
-//            }
+            
             Image("orderSuccess")
                 .renderingMode(.original)
                 .resizable()
                 .frame(width: 300, height: 300)
-                .animation(.linear(duration: 1), value: 5.0)
-                .scaleEffect(scale)
-                .onAppear {
-                    let baseAnimation = Animation.linear(duration: 1)
-                    let repeated = baseAnimation.repeatForever(autoreverses: true)
-                    withAnimation(repeated) {
-                        scale = 0.9
-                    }
-                }
             
             Text("Order Confirmed")
                 .font(.title2)

@@ -13,26 +13,6 @@ struct DetailScreen: View {
     @State var myItems: homeDataModel
     var body: some View {
             VStack {
-                //            HStack {
-                //                    Button(action: {
-                //                        print("button pressed")
-                //
-                //                    }) {
-                //                        Image(systemName: "chevron.backward")
-                //                            .frame(width: 25.0, height: 25.0)
-                //                            .foregroundColor(/*@START_MENU_TOKEN@*/.black/*@END_MENU_TOKEN@*/)
-                //                    }
-                //                    .padding(.leading, 25.0)
-                //                    Spacer()
-                //                    Button(action: {
-                //                        print("button pressed")
-                //                    }) {
-                //                        Image(systemName: "heart")
-                //                            .tint(.red)
-                //                            .frame(width: 30.0, height: 30.0)
-                //                    }
-                //                    .padding(.trailing, 25.0)
-                //                }
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack{
                         Text(myItems.name ?? "name of prod")
