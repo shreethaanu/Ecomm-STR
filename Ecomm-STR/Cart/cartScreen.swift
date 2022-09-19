@@ -27,7 +27,6 @@ struct cartScreen: View {
                         
                     }) {
                         Image(systemName: "chevron.right")
-                            .frame(width: 25.0, height: 25.0)
                             .foregroundColor(.gray)
                     }
                     .padding(.trailing)
