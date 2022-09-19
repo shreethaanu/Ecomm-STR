@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct cartItems: View {
+    @State var cartItemsWidth: CGFloat?
+    @State var cartItemsHeight: CGFloat?
     var body: some View {
         HStack {
             Image("str")

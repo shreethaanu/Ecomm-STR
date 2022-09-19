@@ -35,7 +35,7 @@ struct DetailScreen: View {
                 //                }
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack{
-                        Text(myItems.name ?? "")
+                        Text(myItems.name ?? "name of prod")
                             .font(.title)
                             .fontWeight(.medium)
                             .multilineTextAlignment(.center)

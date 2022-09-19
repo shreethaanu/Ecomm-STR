@@ -14,6 +14,7 @@ struct cartScreen: View {
             VStack(spacing: 20) {
                 ForEach(0..<cartItemsData.count) { i in
                     cartItems()
+                        .frame(height: 220)
                 }
                 HStack(){
                     Text("Promo/Student Code or Vourchers")
@@ -80,15 +81,15 @@ struct cartScreen: View {
                             .multilineTextAlignment(.trailing)
                         Spacer()
                     }
-                    Button("Checkout") {
-                        
+                    NavigationLink(destination: checkout()) {
+                        Text("Checkout")
+                            .padding(.all, 20.0)
+                            .frame(width: 300.0, height: 70.0)
+                            .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.black/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
+                            .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.heavy/*@END_MENU_TOKEN@*/)
                     }
-                    .padding(.all, 20.0)
-                    .frame(width: 300.0, height: 70.0)
-                    .background(/*@START_MENU_TOKEN@*//*@PLACEHOLDER=View@*/Color.black/*@END_MENU_TOKEN@*/)
-                    .cornerRadius(/*@START_MENU_TOKEN@*/25.0/*@END_MENU_TOKEN@*/)
-                    .foregroundColor(/*@START_MENU_TOKEN@*/.white/*@END_MENU_TOKEN@*/)
-                    .fontWeight(/*@START_MENU_TOKEN@*/.heavy/*@END_MENU_TOKEN@*/)
                 }
             }
             .padding(.leading)
