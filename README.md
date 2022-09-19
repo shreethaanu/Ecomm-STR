@@ -11,6 +11,10 @@ This is one of the open source application i'm building with SwiftUI. This is an
 
 
 
+https://user-images.githubusercontent.com/16131852/191000059-f4e97d69-f5aa-4072-a2a1-2f23b945a5b0.mp4
+
+
+
 ## Features
 
 - Light/dark mode toggle
