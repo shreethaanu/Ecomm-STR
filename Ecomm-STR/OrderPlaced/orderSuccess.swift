@@ -19,22 +19,11 @@ struct orderSuccess: View {
                 .fontWeight(.medium)
                 .padding(.vertical)
 
-            
-            VStack{
                 Image("orderSuccess")
                     .renderingMode(.original)
                     .resizable()
                     .frame(width: 300, height: 300)
-                    .clipped()
-                    .scaleEffect(scale)
-                    .onAppear {
-                        let baseAnimation = Animation.easeIn(duration: 1)
-                        let repeated = baseAnimation.repeatForever(autoreverses: true)
-                        withAnimation(repeated) {
-                            scale = 0.1
-                        }
-                    }
-            }
+
             Text("Order Confirmed")
                 .font(.title2)
                 .fontWeight(.thin)
