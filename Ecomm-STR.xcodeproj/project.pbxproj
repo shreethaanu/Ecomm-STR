@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E20DB95829BEFD8A002F761F /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DB95729BEFD8A002F761F /* WebService.swift */; };
+		E20DB95A29BF00A6002F761F /* NetworkConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = E20DB95929BF00A6002F761F /* NetworkConstant.swift */; };
 		E2B2C20C28D4A866009EC4E7 /* Ecomm_STRApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C20B28D4A866009EC4E7 /* Ecomm_STRApp.swift */; };
 		E2B2C20E28D4A866009EC4E7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2B2C20D28D4A866009EC4E7 /* ContentView.swift */; };
 		E2B2C21028D4A867009EC4E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2B2C20F28D4A867009EC4E7 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E20DB95729BEFD8A002F761F /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		E20DB95929BF00A6002F761F /* NetworkConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConstant.swift; sourceTree = "<group>"; };
 		E2B2C20828D4A866009EC4E7 /* Ecomm-STR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ecomm-STR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2B2C20B28D4A866009EC4E7 /* Ecomm_STRApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ecomm_STRApp.swift; sourceTree = "<group>"; };
 		E2B2C20D28D4A866009EC4E7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -95,6 +99,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E20DB95629BEFD4A002F761F /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				E20DB95729BEFD8A002F761F /* WebService.swift */,
+				E20DB95929BF00A6002F761F /* NetworkConstant.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
 		E2B2C1FF28D4A866009EC4E7 = {
 			isa = PBXGroup;
 			children = (
@@ -118,6 +131,7 @@
 		E2B2C20A28D4A866009EC4E7 /* Ecomm-STR */ = {
 			isa = PBXGroup;
 			children = (
+				E20DB95629BEFD4A002F761F /* Networking */,
 				E2B2C24228D72ACF009EC4E7 /* Home */,
 				E2B2C23F28D71969009EC4E7 /* DetailScreen */,
 				E2B2C24728D734E9009EC4E7 /* Cart */,
@@ -345,6 +359,7 @@
 				E2B2C24628D73431009EC4E7 /* productsCollectionCarousal.swift in Sources */,
 				E2B2C23E28D71122009EC4E7 /* bannerView.swift in Sources */,
 				E2B2C23C28D4A9F4009EC4E7 /* topbar.swift in Sources */,
+				E20DB95A29BF00A6002F761F /* NetworkConstant.swift in Sources */,
 				E2B2C24428D72AEF009EC4E7 /* homeDataModel.swift in Sources */,
 				E2B2C21528D4A867009EC4E7 /* Persistence.swift in Sources */,
 				E2B2C20E28D4A866009EC4E7 /* ContentView.swift in Sources */,
@@ -352,6 +367,7 @@
 				E2B2C20C28D4A866009EC4E7 /* Ecomm_STRApp.swift in Sources */,
 				E2B2C24928D734F7009EC4E7 /* cartScreen.swift in Sources */,
 				E2B2C24128D71981009EC4E7 /* DetailScreen.swift in Sources */,
+				E20DB95829BEFD8A002F761F /* WebService.swift in Sources */,
 				E2B2C21828D4A867009EC4E7 /* Ecomm_STR.xcdatamodeld in Sources */,
 				E2B2C25328D8600B009EC4E7 /* orderSuccess.swift in Sources */,
 				E2B2C24E28D7AE56009EC4E7 /* checkout.swift in Sources */,

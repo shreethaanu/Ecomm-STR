@@ -10,6 +10,7 @@ import CoreData
 
 struct ContentView: View {
     var headerButtons = ["All", "Men", "Women", "Kids"]
+    let productsPublisher = webservice().getProducts()
     var body: some View {
         NavigationView {
                 VStack {
@@ -23,7 +24,8 @@ struct ContentView: View {
                             .padding(.leading)
                         Spacer()
                     }
-                    ScrollView(.horizontal) {
+                        
+                        ScrollView(.horizontal) {
                         HStack(spacing: 20) {
                             ForEach(0..<headerButtons.count) { i in
                                 Button(headerButtons[i]) {
@@ -47,6 +49,31 @@ struct ContentView: View {
                 }
             }
         }
+    }
+    func fetchProducts(){
+
+        let productsByIdPublisher = productsPublisher
+            .map { products in
+                products.reduce(into: [:]) { result, product in
+                    result[product.id] = product
+                }
+            }
+
+        let productsByIdSubscription = productsByIdPublisher
+            .sink(
+                receiveCompletion: { completion in
+                    switch completion {
+                    case .finished:
+                        print("Finished receiving products")
+                    case .failure(let error):
+                        print("Error receiving products: \(error.localizedDescription)")
+                    }
+                },
+                receiveValue: { productsById in
+                    print("Products by ID:")
+                    print(productsById)
+                }
+            )
     }
 }
 

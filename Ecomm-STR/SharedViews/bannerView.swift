@@ -11,11 +11,10 @@ struct bannerView: View {
     @State var myItems: homeDataModel
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
-            HStack(spacing: 16) {
+            LazyHStack(spacing: 16) {
                 ForEach(0 ..< 5) { item in
                     GeometryReader { geometry in
                         VStack {
-                           
                             NavigationLink(destination: DetailScreen(myItems: myItems)) {
                                     RoundedRectangle(cornerRadius: 30)
                                         .fill(LinearGradient(gradient: Gradient(colors: [Color(#colorLiteral(red: 0.2196078449, green: 0.007843137719, blue: 0.8549019694, alpha: 1)), Color(#colorLiteral(red: 0.5568627715, green: 0.3529411852, blue: 0.9686274529, alpha: 1))]), startPoint: .topLeading, endPoint: .bottomTrailing))
